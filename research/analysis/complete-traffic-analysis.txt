@@ -1,0 +1,273 @@
+Frame 5: 260 bytes on wire (2080 bits), 260 bytes captured (2080 bits)
+    Encapsulation type: NULL/Loopback (15)
+    Arrival Time: Jul 25, 2025 20:40:40.860349000 CEST
+    UTC Arrival Time: Jul 25, 2025 18:40:40.860349000 UTC
+    Epoch Arrival Time: 1753468840.860349000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000027000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000297000 seconds]
+    Frame Number: 5
+    Frame Length: 260 bytes (2080 bits)
+    Capture Length: 260 bytes (2080 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: null:ipv6:tcp:http:json]
+Null/Loopback
+    Family: IPv6 (30)
+Internet Protocol Version 6, Src: ::1, Dst: ::1
+    0110 .... = Version: 6
+    .... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        .... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+        .... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    .... 1110 0000 1001 0000 0000 = Flow Label: 0xe0900
+    Payload Length: 216
+    Next Header: TCP (6)
+    Hop Limit: 64
+    Source Address: ::1
+        [Address Space: Reserved by IETF]
+        [Special-Purpose Allocation: Loopback Address]
+            [Source: False]
+            [Destination: False]
+            [Forwardable: False]
+            [Globally Reachable: False]
+            [Reserved-by-Protocol: True]
+    Destination Address: ::1
+        [Address Space: Reserved by IETF]
+        [Special-Purpose Allocation: Loopback Address]
+            [Source: False]
+            [Destination: False]
+            [Forwardable: False]
+            [Globally Reachable: False]
+            [Reserved-by-Protocol: True]
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 62216, Dst Port: 8001, Seq: 1, Ack: 1, Len: 184
+    Source Port: 62216
+    Destination Port: 8001
+    [Stream index: 0]
+    [Stream Packet Number: 5]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 0... = Data: Absent
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ···ASS]
+    [TCP Segment Len: 184]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 3630653115
+    [Next Sequence Number: 185    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 2508870893
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 6372
+    [Calculated window size: 407808]
+    [Window size scaling factor: 64]
+    Checksum: 0x00e0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 1076259769, TSecr 1448779444
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 1076259769
+            Timestamp echo reply: 1448779444
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.000297000 seconds]
+        [Time since previous frame in this TCP stream: 0.000027000 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.000238000 seconds]
+        [Bytes in flight: 184]
+        [Bytes sent since last PSH flag: 184]
+    TCP payload (184 bytes)
+Hypertext Transfer Protocol
+    POST /mcp HTTP/1.1\r\n
+        Request Method: POST
+        Request URI: /mcp
+        Request Version: HTTP/1.1
+    Host: localhost:8001\r\n
+    User-Agent: curl/8.7.1\r\n
+    Accept: */*\r\n
+    Content-Type: application/json\r\n
+    Content-Length: 51\r\n
+        [Content length: 51]
+    \r\n
+    [Full request URI: http://localhost:8001/mcp]
+    File Data: 51 bytes
+JavaScript Object Notation: application/json
+    Object
+        Member: jsonrpc
+            [Path with value: /jsonrpc:2.0]
+            [Member with value: jsonrpc:2.0]
+            String value: 2.0
+            Key: jsonrpc
+            [Path: /jsonrpc]
+        Member: id
+            [Path with value: /id:1]
+            [Member with value: id:1]
+            Number value: 1
+            Key: id
+            [Path: /id]
+        Member: method
+            [Path with value: /method:tools/list]
+            [Member with value: method:tools/list]
+            String value: tools/list
+            Key: method
+            [Path: /method]
+
+Frame 9: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits)
+    Encapsulation type: NULL/Loopback (15)
+    Arrival Time: Jul 25, 2025 20:40:40.864804000 CEST
+    UTC Arrival Time: Jul 25, 2025 18:40:40.864804000 UTC
+    Epoch Arrival Time: 1753468840.864804000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000028000 seconds]
+    [Time delta from previous displayed frame: 0.004455000 seconds]
+    [Time since reference or first frame: 0.004752000 seconds]
+    Frame Number: 9
+    Frame Length: 150 bytes (1200 bits)
+    Capture Length: 150 bytes (1200 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: null:ipv6:tcp:http:json]
+Null/Loopback
+    Family: IPv6 (30)
+Internet Protocol Version 6, Src: ::1, Dst: ::1
+    0110 .... = Version: 6
+    .... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        .... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+        .... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    .... 0101 0000 1111 0000 0000 = Flow Label: 0x50f00
+    Payload Length: 106
+    Next Header: TCP (6)
+    Hop Limit: 64
+    Source Address: ::1
+        [Address Space: Reserved by IETF]
+        [Special-Purpose Allocation: Loopback Address]
+            [Source: False]
+            [Destination: False]
+            [Forwardable: False]
+            [Globally Reachable: False]
+            [Reserved-by-Protocol: True]
+    Destination Address: ::1
+        [Address Space: Reserved by IETF]
+        [Special-Purpose Allocation: Loopback Address]
+            [Source: False]
+            [Destination: False]
+            [Forwardable: False]
+            [Globally Reachable: False]
+            [Reserved-by-Protocol: True]
+    [Stream index: 0]
+Transmission Control Protocol, Src Port: 8001, Dst Port: 62216, Seq: 309, Ack: 185, Len: 74
+    Source Port: 8001
+    Destination Port: 62216
+    [Stream index: 0]
+    [Stream Packet Number: 9]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 74]
+    Sequence Number: 309    (relative sequence number)
+    Sequence Number (raw): 2508871201
+    [Next Sequence Number: 383    (relative sequence number)]
+    Acknowledgment Number: 185    (relative ack number)
+    Acknowledgment number (raw): 3630653299
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 6370
+    [Calculated window size: 407680]
+    [Window size scaling factor: 64]
+    Checksum: 0x0072 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps: TSval 1448779449, TSecr 1076259774
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 1448779449
+            Timestamp echo reply: 1076259774
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.004752000 seconds]
+        [Time since previous frame in this TCP stream: 0.000028000 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.000238000 seconds]
+        [Bytes in flight: 74]
+        [Bytes sent since last PSH flag: 74]
+    TCP payload (74 bytes)
+    TCP segment data (74 bytes)
+[2 Reassembled TCP Segments (382 bytes): #7(308), #9(74)]
+    [Frame: 7, payload: 0-307 (308 bytes)]
+    [Frame: 9, payload: 308-381 (74 bytes)]
+    [Segment count: 2]
+    [Reassembled TCP length: 382]
+    [Reassembled TCP Data […]: 485454502f312e312034303120556e617574686f72697a65640d0a646174653a204672692c203235204a756c20323032352031383a34303a343020474d540d0a7365727665723a20757669636f726e0d0a636f6e74656e742d747970653a206170706c69636174696f6]
+Hypertext Transfer Protocol
+    HTTP/1.1 401 Unauthorized\r\n
+        Response Version: HTTP/1.1
+        Status Code: 401
+        [Status Code Description: Unauthorized]
+        Response Phrase: Unauthorized
+    date: Fri, 25 Jul 2025 18:40:40 GMT\r\n
+    server: uvicorn\r\n
+    content-type: application/json\r\n
+    content-length: 74\r\n
+        [Content length: 74]
+    www-authenticate: Bearer error="invalid_token", error_description="Authentication required", resource_metadata="http://localhost:8001/.well-known/oauth-protected-resource"\r\n
+    \r\n
+    [Request in frame: 5]
+    [Time since request: 0.004455000 seconds]
+    [Request URI: /mcp]
+    [Full request URI: http://localhost:8001/mcp]
+    File Data: 74 bytes
+JavaScript Object Notation: application/json
+    Object
+        Member: error
+            [Path with value: /error:invalid_token]
+            [Member with value: error:invalid_token]
+            String value: invalid_token
+            Key: error
+            [Path: /error]
+        Member: error_description
+            [Path with value: /error_description:Authentication required]
+            [Member with value: error_description:Authentication required]
+            String value: Authentication required
+            Key: error_description
+            [Path: /error_description]
+

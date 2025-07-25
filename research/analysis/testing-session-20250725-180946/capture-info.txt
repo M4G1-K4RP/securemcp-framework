@@ -1,0 +1,2 @@
+Traffic capture started, PID: 96294
+Traffic capture stopped

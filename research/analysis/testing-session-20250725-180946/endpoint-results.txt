@@ -1,0 +1,303 @@
+=== ENDPOINT ENUMERATION SESSION ===
+Date: Fri Jul 25 18:10:57 CEST 2025
+
+=== TEST 1: ROOT ENDPOINTS ===
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> GET / HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100     9  100     9    0     0    851      0 --:--:-- --:--:-- --:--:--   900
+* Connection #0 to host localhost left intact
+Not Found
+* Host localhost:9000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:9000...
+* Connected to localhost (::1) port 9000
+> GET / HTTP/1.1
+> Host: localhost:9000
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100     9  100     9    0     0   3026      0 --:--:-- --:--:-- --:--:--  4500
+* Connection #0 to host localhost left intact
+Not Found
+=== TEST 2: MCP ENDPOINTS ===
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> GET /messages HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100     9  100     9    0     0  12517      0 --:--:-- --:--:-- --:--:--  9000
+* Connection #0 to host localhost left intact
+Not Found
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> GET /message HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100     9  100     9    0     0  12311      0 --:--:-- --:--:-- --:--:--  9000
+* Connection #0 to host localhost left intact
+Not Found
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> GET /sse HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100     9  100     9    0     0  12552      0 --:--:-- --:--:-- --:--:--  9000
+* Connection #0 to host localhost left intact
+Not Found
+=== TEST 3: OAUTH ENDPOINTS ===
+* Host localhost:9000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:9000...
+* Connected to localhost (::1) port 9000
+> GET /authorize HTTP/1.1
+> Host: localhost:9000
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 400 Bad Request
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< cache-control: no-store
+< content-length: 138
+< content-type: application/json
+< 
+{ [138 bytes data]
+100   138  100   138    0     0  17811      0 --:--:-- --:--:-- --:--:-- 19714
+* Connection #0 to host localhost left intact
+{"error":"invalid_request","error_description":"client_id: Field required\nresponse_type: Field required\ncode_challenge: Field required"}
+* Host localhost:9000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:9000...
+* Connected to localhost (::1) port 9000
+> GET /token HTTP/1.1
+> Host: localhost:9000
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 405 Method Not Allowed
+< date: Fri, 25 Jul 2025 16:10:56 GMT
+< server: uvicorn
+< allow: POST, OPTIONS
+< content-length: 18
+< content-type: text/plain; charset=utf-8
+< 
+{ [18 bytes data]
+100    18  100    18    0     0  21454      0 --:--:-- --:--:-- --:--:-- 18000
+* Connection #0 to host localhost left intact
+Method Not Allowed
+=== TESTS COMPLETED ===
+=== TESTING POST METHODS ===
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> POST / HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 51
+> 
+} [51 bytes data]
+* upload completely sent off: 51 bytes
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 18:15:19 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100    60  100     9  100    51    724   4104 --:--:-- --:--:-- --:--:--  5000
+* Connection #0 to host localhost left intact
+Not Found
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> POST /messages HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 51
+> 
+} [51 bytes data]
+* upload completely sent off: 51 bytes
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 18:15:19 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100    60  100     9  100    51   8379  47486 --:--:-- --:--:-- --:--:-- 60000
+* Connection #0 to host localhost left intact
+Not Found
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> POST / HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> Content-Type: application/json
+> Authorization: Bearer fake_token
+> Content-Length: 51
+> 
+} [51 bytes data]
+* upload completely sent off: 51 bytes
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 18:15:33 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100    60  100     9  100    51    119    676 --:--:-- --:--:-- --:--:--   800
+* Connection #0 to host localhost left intact
+Not Found=== TESTING PROPER MCP ENDPOINT ===
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> POST /mcp HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 51
+> 
+} [51 bytes data]
+* upload completely sent off: 51 bytes
+< HTTP/1.1 401 Unauthorized
+< date: Fri, 25 Jul 2025 18:32:29 GMT
+< server: uvicorn
+< content-type: application/json
+< content-length: 74
+< www-authenticate: Bearer error="invalid_token", error_description="Authentication required", resource_metadata="http://localhost:8001/.well-known/oauth-protected-resource"
+< 
+{ [74 bytes data]
+100   125  100    74  100    51   5624   3876 --:--:-- --:--:-- --:--:--  9615
+* Connection #0 to host localhost left intact
+{"error": "invalid_token", "error_description": "Authentication required"}* Host localhost:8001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8001...
+* Connected to localhost (::1) port 8001
+> GET /sse HTTP/1.1
+> Host: localhost:8001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< date: Fri, 25 Jul 2025 18:32:49 GMT
+< server: uvicorn
+< content-length: 9
+< content-type: text/plain; charset=utf-8
+< 
+{ [9 bytes data]
+100     9  100     9    0     0   1253      0 --:--:-- --:--:-- --:--:--  1285
+* Connection #0 to host localhost left intact
+Not Found
